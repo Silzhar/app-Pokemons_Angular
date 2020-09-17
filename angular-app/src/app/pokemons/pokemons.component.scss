@@ -1,0 +1,18 @@
+.pokeapi{
+    display: block;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 1 1 0;
+    // ES LO MISMO (CREO)
+    // flex-grow: 1;
+    // flex-shrink: 1;
+    // flex-basis: 0;
+    border: 1px solid black;
+    padding: 10px;
+}
