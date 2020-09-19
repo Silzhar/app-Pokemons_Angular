@@ -1,22 +1,5 @@
 <img class="pokeapi" src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png">
 
-<!-- <div class="pokelist" *ngIf="list" >
-    <span (click)="pokemonDetail(list)">Nombre :{{ list.name }}</span>
-</div> -->
-
-<!-- <div class="pokelist" *ngFor="let pokemon of list" >
-    <span (click)="pokemonDetail(pokemon)">Nombre :{{ pokemon.name }}</span>
-    
-</div>  -->
-
-<!-- <h1>prueba</h1>
-<div class="pokelist" *ngIf="list"> 
-    <ul >
-        <li (click)="pokemonDetail(list)" >
-            {{ list.name }}
-        </li>
-    </ul>
-</div> -->
 
 <article *ngFor="let pokemon of detail">
     <p>Nombre :{{ pokemon.name }}</p>
@@ -28,7 +11,7 @@
     <div class="col">
         <p>Listado de pokemons:</p>
         <div *ngFor="let pokemon of list" class="pokemon">
-            <span (click)="pokemonDetail(pokemon)">{{ pokemon.name }}</span>
+            <span (click)="pokemonDetail(pokemon)" class="col__name">{{ pokemon.name }}</span>
         </div>
     </div>
 
@@ -41,3 +24,6 @@
         <p>Peso: {{ weightPokemon }}KG</p>
         <p>Altura: {{ heightPokemon }}m</p>
     </div>
+
+</div>
+
